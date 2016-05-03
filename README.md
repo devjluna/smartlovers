@@ -1,7 +1,7 @@
-Gulp Project Start
+Website smartlover
 ============
 
-This project is based on Gulp tasks automizadas, and has set preprocessor options like Stylus and Jade. Start a good project with a good environment saves you time.
+Proyecto web.
 
 **WARNING**
 

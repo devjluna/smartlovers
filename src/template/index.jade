@@ -6,11 +6,10 @@ html(lang="es")
 		link(type="text/css" rel="stylesheet" href="css/vendor/owl.carousel.css")
 		link(type="text/css" rel="stylesheet" href="css/main.css")
 	body
+		header.header
+			include modules/header
 
-		nav.header-nav
-			include modules/nav
-
-		section.animated.section-row#we
+		//- section.animated.section-row#we
 			.container
 				.row
 					- for (var i = 1; i <= 4; i++)

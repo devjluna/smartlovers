@@ -1,7 +1,7 @@
 var carousel = function() {
-	var owlTeam = $('#owl-team');
+	var owl = $('#owl-team');
 
-	owlTeam.owlCarousel({
+	owl.owlCarousel({
 		items: 3,
 		loop:true,
 		margin: 22,
@@ -24,10 +24,10 @@ var carousel = function() {
 		}
 	})
 	$('.owl-next').click(function() {
-		owlTeam.trigger('next.owl.carousel', [300]);
+		owl.trigger('next.owl.carousel', [300]);
 	})
 	$('.owl-prev').click(function() {
-		owlTeam.trigger('prev.owl.carousel', [300]);
+		owl.trigger('prev.owl.carousel', [300]);
 	})
 }
 

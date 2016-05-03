@@ -7,9 +7,8 @@ var carousel = require('./vendor/module')
 var animate = require('./vendor/animate')
 
 $(window).on('load', function(){
-  carousel()
-  animate()
-  $('.collapse').addClass('fadeInUp')
+	carousel()
+	animate()
 })
 
 $(window).on('load resize', function(){
@@ -17,64 +16,37 @@ $(window).on('load resize', function(){
 			walto = $(window).height()
 
 	$('.header').css('height', walto)
-	$('.header-banner').css('height', walto - 100)
-
-	$('.stadium-article').hover(function(){
-		$(this).find('.stadium-block').show()
-	}, function() {
-		$(this).find('.stadium-block').hide()
-	})
-
-  /*
-   * Nav Scroll Full
-  */
-  $(window).scroll(function() {
-    var t = $(window).scrollTop()
-        nav = $('.navbar-collapse')
-
-    if(t >= 163){
-      nav.addClass('navbar-full').show('slow')
-    }else{
-      nav.removeClass('navbar-full').show('slow')
-    }
-  })
+	if(wancho > 768){
+		$('.header-banner').css('height', walto - 120)
+	}
+	if(wancho <= 768){
+		$('.header-banner').css('height', walto - 60)
+	}
+	if(wancho <= 540){
+		$('.header-banner').css('height', walto)
+	}
 
 	/**
-   * Scrolling section
-   */
-  $anchor = $('.Anchor');
+	 * Scrolling section
+	 */
+	$anchor = $('.Anchor');
 
-  $anchor.on('click', function() {
+	$anchor.on('click', function() {
 
-    if ($(this).closest('li').length) {
-      $anchor.closest('li').removeClass('is-selected')
-      $(this).parent().addClass('is-selected');
-    }
+		if ($(this).closest('li').length) {
+			$anchor.closest('li').removeClass('is-selected')
+			$(this).parent().addClass('is-selected');
+		}
 
-    var $el = $(this)
-    id = $el.attr('href')
+		var $el = $(this)
+		id = $el.attr('href')
 
-    $('html, body').animate({
-        scrollTop: $(id).offset().top - 50
-    }, 500)
-  
-    return false
-  });
+		$('html, body').animate({
+				scrollTop: $(id).offset().top - 50
+		}, 500)
+	
+		return false
+	});
 
-  /**
-   * Banner section
-   */
-  revapi = jQuery('.tp-banner').revolution({
-    delay:5000,
-    startwidth:1170,
-    startheight:400,
-    hideThumbs:10,
-    fullWidth:"off",
-    fullScreen: "on",
-    touchenabled:"on",
-    onHoverStop:"off"
-    //forceFullWidth:"on"
-  });
-
-  
+	
 })

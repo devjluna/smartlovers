@@ -15,3 +15,61 @@ body
 		&-red
 			background-color $red
 			color white
+			
+
+/*
+ * Section Promo
+ */
+.promo
+	background-color $gray_light
+	&-article
+		background-color $white
+		border-radius 10px
+		float left
+		&:before
+			content ''
+			width 80px
+			height 80px
+			background-image url(../images/base/tag-promo.png)
+			background-repeat no-repeat
+			background-size contain
+			position absolute
+			z-index 2
+			left 0
+		.block
+			float left
+			&-img
+				width 40%
+			&-text
+				width 60%
+				height 195px
+				display table
+			.content
+				&-img
+					padding 15px
+				&-text
+					padding-right 15px
+					text-align left
+					display table-cell
+					vertical-align middle
+					h3
+						margin 0
+						color $red
+						font-weight 700
+					h4
+						margin 0
+					h5
+						margin 0
+						margin-bottom .8em
+						&:first-child
+							text-transform uppercase
+					h6
+						margin 0
+						color $gray_dark
+						font-weight 300
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+.container
+	.row
+		#owl-promo.owl-carousel
+			- for (var i = 1 ; i <= 6 ; i++)
+				article.promo-article
+					a(href='campo-1.html')
+						aside.block.block-img
+							figure.content-img
+								img(class="img-responsive" src="images/mobile/mobile_#{i}.png")
+						aside.block.block-text
+							.content-text
+								h4 Iphone 6 #{i}
+								h5 Apple
+								h3 S/. 1600
+								h5 Precio de equipo
+								h6 *En plan conexión 190 con acuerdo de 18 meses.

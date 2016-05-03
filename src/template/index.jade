@@ -1,0 +1,39 @@
+doctype html
+html(lang="es")
+	head
+		meta( name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		title Smartlovers
+		link(type="text/css" rel="stylesheet" href="css/vendor/owl.carousel.css")
+		link(type="text/css" rel="stylesheet" href="css/main.css")
+	body
+
+		nav.header-nav
+			include modules/nav
+
+		section.animated.section-row#we
+			.container
+				.row
+					- for (var i = 1; i <= 4; i++)
+						.col-md-3.col-sm-2.we-block
+							if i === 1
+								figure.we-img
+									i(class="fa fa-bullhorn" aria-hidden="true")
+								h3 Nosotros
+							if i === 2
+								figure.we-img
+									i(class="fa fa-rocket" aria-hidden="true")
+								h3 Misión
+							if i === 3
+								figure.we-img
+									i(class="fa fa-eye" aria-hidden="true")
+								h3 Visión
+							if i === 4
+								figure.we-img
+									i(class="fa fa-list-ul" aria-hidden="true")
+								h3 Valores
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quia saepe nihil nulla sit assumenda nesciunt cumque.
+
+		footer.footer
+			include modules/footer
+		script(src="js/bundle.js")
+		script(src="js/vendor/owl.carousel.min.js")

@@ -1,0 +1,67 @@
+#contact,
+#onecontact
+	.contact
+		&-title
+			text-align left
+			.title
+				&-block
+					margin 0
+					font-family OpenCond
+					font-weight 700
+					text-transform uppercase
+					margin-bottom .6em
+					font-size 1.7em
+					color $red
+					.fa-caret-right
+						color $red
+						&:before
+							margin-right 10px
+		&-text
+			text-align justify
+			p
+				font-family Open
+			.list
+				&-contact
+					li
+						a
+							display inline-block
+							text-decoration none
+							color $dark_gray
+							h5
+								margin 8px 0
+							i
+								margin-right 10px
+								width 10px
+							&:hover
+								color $red
+								i
+									color $red
+				&-social
+					li
+						float left
+						a
+							font-size 1.5em
+							margin-left .5em
+							&:hover
+								i
+									color $red
+						&:first-child
+							a
+								margin-left 0
+.form
+	&-box
+		display block
+		margin-bottom 15px
+		&.col-xs-6
+			&:nth-child(2n+1)
+				padding-left 0
+			&:nth-child(2n)
+				padding-right 0
+		&:last-child
+			margin-bottom 0
+		&.btn
+			&-box
+				text-align right
+				display block
+				.btn-submit
+					display inline-block

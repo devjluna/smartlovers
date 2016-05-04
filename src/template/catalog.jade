@@ -1,0 +1,31 @@
+doctype html
+html(lang="es")
+	head
+		meta( name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		title Smartlovers
+		link(type="text/css" rel="stylesheet" href="css/vendor/owl.carousel.css")
+		link(type="text/css" rel="stylesheet" href="css/main.css")
+	body
+		header.headerint
+			include modules/headerint
+		section.banner
+			.banner-pages(style="background-image: url(images/banner/bgint_3.png)")
+				.container
+					.banner-title
+						h2
+							i(class="icon-issu")
+							| Catálogo de 
+							span Productos
+		section.section-row.catalog-info
+			.container
+				h3.section-title
+					| Tenemos el celular
+					span  ideal para ti
+				p.section-info Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sapiente omnis molestiae veritatis totam modi natus beatae fuga, doloremque ut dolor! Animi optio explicabo officiis nemo architecto laborum, fugiat nihil.
+		section.catalog-product
+			include modules/cataproduct
+		footer.footer
+			include modules/footer
+		script(src="js/bundle.js")
+		script(src="js/vendor/bootstrap.js")
+		script(src="js/vendor/owl.carousel.min.js")

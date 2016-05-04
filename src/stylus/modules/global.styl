@@ -15,6 +15,22 @@ body
 		&-red
 			background-color $red
 			color white
+.square
+	&-btn
+		text-align center
+		margin 20px 0
+		a
+			background-color $red
+			color white
+			text-decoration none
+			padding 10px 20px
+			display inline-block
+			border-radius 20px
+			transition all .3s
+			&:hover,
+			&:focus,
+			&:active
+				background-color black
 			
 
 /*
@@ -68,7 +84,61 @@ body
 						color $gray_dark
 						font-weight 300
 
-
+/*
+ * Section Info
+ */
+.section
+	&-title
+		font-family RobotoC
+		font-weight 300
+		margin 0
+		text-align left
+		text-transform uppercase
+		margin-bottom 10px
+		span
+			font-weight 700
+	&-info
+		text-align left
+		
+/*
+ * Banner Pages
+ */
+.banner
+	.container
+		height 100%
+	&-pages
+		height 250px
+		width 100%
+		background-color $gray
+		background-size cover
+		background-repeat no-repeat
+		background-position center
+	&-title
+		display table
+		height 100%
+		width 100%
+		h2
+			display table-cell
+			vertical-align middle
+			color $white
+			text-transform uppercase
+			font-family RobotoC
+			font-weight 300
+			span
+				font-weight 700
+				color $white
+			i
+				color $red
+				margin-right 20px
+				display inline-block
+				vertical-align middle
+				font-size 2.5em
+	@media screen and (max-width 768px)
+		&-pages
+			height 100px
+		&-title
+			h2
+				font-size 1.3em
 
 
 

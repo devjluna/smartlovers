@@ -28,31 +28,8 @@ html(lang="es")
 			<span class="icon-social"></span>
 			<span class="icon-system"></span>
 			<span class="icon-window"></span>
-
-		//- section.animated.section-row#we
-			.container
-				.row
-					- for (var i = 1; i <= 4; i++)
-						.col-md-3.col-sm-2.we-block
-							if i === 1
-								figure.we-img
-									i(class="fa fa-bullhorn" aria-hidden="true")
-								h3 Nosotros
-							if i === 2
-								figure.we-img
-									i(class="fa fa-rocket" aria-hidden="true")
-								h3 Misión
-							if i === 3
-								figure.we-img
-									i(class="fa fa-eye" aria-hidden="true")
-								h3 Visión
-							if i === 4
-								figure.we-img
-									i(class="fa fa-list-ul" aria-hidden="true")
-								h3 Valores
-							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quia saepe nihil nulla sit assumenda nesciunt cumque.
-
 		footer.footer
 			include modules/footer
 		script(src="js/bundle.js")
+		script(src="js/vendor/bootstrap.js")
 		script(src="js/vendor/owl.carousel.min.js")

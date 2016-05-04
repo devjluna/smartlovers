@@ -13,7 +13,7 @@
 		&-nav
 			height initial
 
-.navbar
+.navbarhome
 	&-header
 		display block
 		float none
@@ -118,3 +118,49 @@
 		&-title
 			h3
 				font-size 1.3em
+.navbar
+	&-black
+		background-color black
+		border-radius 0
+		border 0
+		border-bottom 5px solid $red
+		margin-bottom 0
+		.navbar
+			&-brand
+				padding 0 15px
+				img
+					max-width 45px
+					margin 3.3px auto
+			&-toggle
+				border-color $white
+				.icon-bar
+					background-color $white
+			&-nav
+				li
+					a
+						padding 15px 10px
+						span
+							color $white
+						i
+							color $white
+							margin-right 5px
+							font-size 1.2em
+							position relative
+							top 2px
+						&:hover,
+						&:focus,
+						&:active
+							transition all .3s
+							background-color $red
+	&-text
+		color $white
+		font-family RobotoC
+		a
+			display inline-block
+			img
+				max-width 50px
+				position relative
+				top -5px
+				margin-left 5px
+		
+

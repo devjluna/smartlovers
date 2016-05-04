@@ -1,0 +1,85 @@
+.catalog
+	&-product
+		padding-bottom 50px
+	&-block
+		margin-bottom 20px
+		width 25%
+		display inline-block
+		margin-right -4px
+		padding 0 10px
+	&-article
+		border 1px solid $gray_light
+		border-radius 10px 10px 0 0
+		padding 15px
+		transition all .3s
+		&:hover
+			box-shadow 0 0 10px rgba($gray_dark, .5)
+	&-figure
+		img
+			max-width 100px
+			margin 0 auto
+	&-title
+		text-align center
+		margin 15px 0
+		h4
+			margin 0
+			font-family RobotoC
+			font-size 1.5em
+		h6
+			margin 0
+			text-transform uppercase
+	&-details
+		display table
+		.block
+			&-two
+				width 50%
+				padding-right 15px
+				display table-cell
+				vertical-align middle
+				text-align right
+				&:nth-child(2)
+					border-left 1px solid $gray_light
+					padding-right 0
+					padding-left 15px
+					text-align left
+				h3
+					color $red
+					margin 0
+					font-family Roboto
+					font-weight 700
+				h6
+					margin 0
+					font-size .8em
+	&-compare
+		background-color $gray_light
+		margin 0 -15px -15px
+		padding 6px 0 2px
+		text-align center
+		font-family RobotoC
+		text-transform uppercase
+		label
+			position relative
+			font-weight 300
+			top 1px
+	@media screen and (max-width 1200px)
+		&-details
+			.block-two
+				h3
+					font-size 19px
+	@media screen and (max-width 996px)
+		&-block
+			width 33.33%
+		&-details
+			.block-two
+				h3
+					font-size 19px
+	@media screen and (max-width 768px)
+		&-block
+			width 50%
+	@media screen and (max-width 500px)
+		&-block
+			width 100%
+			padding 0
+
+
+

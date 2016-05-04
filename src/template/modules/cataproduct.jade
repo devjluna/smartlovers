@@ -1,0 +1,24 @@
+.container
+	- for (var i = 1 ; i <= 12 ; i++)
+		section.catalog-block
+			article.catalog-article
+				figure.catalog-figure
+					img(src="images/mobile/mobile_#{i}.png" class="img-responsive")
+				.catalog-title
+					h4 IPhone #{i}S
+					h6 Apple
+				.catalog-details
+					.block-two
+						h3 S/. 1200
+						h6 Precio de equipo
+					.block-two
+						h6 *En plan conexión 190 con acuerdo de 18 meses.
+				.square-btn
+					a(href="product.html") Ver Detalle
+				.catalog-compare
+					input(
+						type='checkbox'
+						name='compare[]'
+						id='compare#{i}'
+					)
+					label(for="compare#{i}") Comparar

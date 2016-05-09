@@ -16,12 +16,77 @@ html(lang="es")
 							i(class="icon-issu")
 							| Detalle del 
 							span Producto
-		section.section-row.catalog-info
+		section.section-row.product-info
+			.container
+				.product-img
+					figure.phone-img(style="background-image: url(images/mobile/mobile_1.png)")
+				.product-description
+					.phone-title
+						h3 IPhone 6S
+						h4 APPLE
+					.phone-price
+						.block-two
+							h3 S/. 1200
+							h4 Precio de equipo
+							h5 *En plan conexión 190 con acuerdo de 18 meses.
+						.block-two
+							a(href="#" class="btn btn-red") Contratar
+					.phone-plan
+						h3 Planes
+						.plan-radio
+							- for (var i = 1 ; i <= 5 ; i++)
+								span.block-plan
+									input(
+										type="radio"
+										name="Radios"
+										id="Radio#{i}"
+										class="radio"
+										value="Option 1"
+									)
+									label(for="Radio#{i}") Claro Conexión 99
+		section.section-row.product-feature
 			.container
 				h3.section-title
-					| Tenemos el celular
-					span  ideal para ti
-				p.section-info Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua
+					| Características del
+					span  Producto
+				article.phone-feature
+					.feature-icon
+						span(class="icon-window")
+					.feature-title
+						h3 4.5’
+						h4 PANTALLA
+				article.phone-feature
+					.feature-icon
+						span(class="icon-camera-on")
+					.feature-title
+						h3 16MP
+						h4 CAMARA
+				article.phone-feature
+					.feature-icon
+						span(class="icon-camera-on")
+					.feature-title
+						h3 8MP
+						h4 CAMARA FRONTAL
+				article.phone-feature
+					.feature-icon
+						span(class="icon-memory")
+					.feature-title
+						h3 16GB
+						h4 MEMORIA
+				article.phone-feature
+					.feature-icon
+						span(class="icon-hardware")
+					.feature-title
+						h3 1.3GHZ
+						h4 PROCESADOR
+				article.phone-feature
+					.feature-icon
+						span(class="icon-system")
+					.feature-title
+						h3 IOS
+						h4 SISTEMA
+
+				
 
 		footer.footer
 			include modules/footer

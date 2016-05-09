@@ -1,0 +1,30 @@
+.container
+	.row
+		.col-md-9
+			.blog-bock
+				.blog-img
+					figure(style="background-image: url(images/blog/blog_1.jpg)")
+				.blog-text
+					h3 LOREM IPSUM DOLOR SIT
+					h5 USERPUBLIC - 14/04/2016
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rerum qui odio excepturi reiciendis nulla ab voluptate quasi, in, nemo velit, totam dignissimos. Laborum iusto iste reiciendis, qui cum quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rerum qui odio excepturi reiciendis nulla ab voluptate quasi, in, nemo velit, totam dignissimos. Laborum iusto iste reiciendis, qui cum quam.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rerum qui odio excepturi reiciendis nulla ab voluptate quasi, in, nemo velit, totam dignissimos. Laborum iusto iste reiciendis, qui cum quam.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rerum qui odio excepturi reiciendis nulla ab voluptate quasi, in, nemo velit, totam dignissimos. Laborum iusto iste reiciendis, qui cum quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rerum qui odio excepturi reiciendis nulla ab voluptate quasi, in, nemo velit, totam dignissimos. Laborum iusto iste reiciendis, qui cum quam.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rerum qui odio excepturi reiciendis nulla ab voluptate quasi, in, nemo velit, totam dignissimos. Laborum iusto iste reiciendis, qui cum quam.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rerum qui odio excepturi reiciendis nulla ab voluptate quasi, in, nemo velit, totam dignissimos. Laborum iusto iste reiciendis, qui cum quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rerum qui odio excepturi reiciendis nulla ab voluptate quasi, in, nemo velit, totam dignissimos. Laborum iusto iste reiciendis, qui cum quam.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rerum qui odio excepturi reiciendis nulla ab voluptate quasi, in, nemo velit, totam dignissimos. Laborum iusto iste reiciendis, qui cum quam.
+		.col-md-3
+			.blognew-title
+				h3
+					span(class="icon-blog")
+					|  Nuevos
+					span  Artículos
+			- for (var i = 1 ; i <= 3 ; i++)
+				article.blognew
+					.blognew-image
+						figure(style="background-image: url(images/blog/blog_1.jpg)")
+					.blognew-content
+						h3 LOREM IPSUM DOLOR SIT
+						h5 USERPUBLIC - 14/04/2016
+						.blognew-btn
+							a(href="blog.html" class="btn btn-red") Ver más

@@ -1,0 +1,25 @@
+doctype html
+html(lang="es")
+	head
+		meta( name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		title Smartlovers
+		link(type="text/css" rel="stylesheet" href="css/vendor/owl.carousel.css")
+		link(type="text/css" rel="stylesheet" href="css/main.css")
+	body
+		header.headerint
+			include modules/headerint
+		section.banner
+			.banner-pages(style="background-image: url(images/banner/bgint_2.png)")
+				.container
+					.banner-title
+						h2
+							i(class="icon-blog")
+							| Blog
+							span  Smartlovers
+		section.section-row.blog
+			include modules/blogarticle
+		footer.footer
+			include modules/footer
+		script(src="js/bundle.js")
+		script(src="js/vendor/bootstrap.js")
+		script(src="js/vendor/owl.carousel.min.js")

@@ -1,0 +1,50 @@
+doctype html
+html(lang="es")
+	head
+		meta( name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		title Smartlovers
+		link(type="text/css" rel="stylesheet" href="css/vendor/owl.carousel.css")
+		link(type="text/css" rel="stylesheet" href="css/main.css")
+	body
+		header.headerint
+			include modules/headerint
+		section.section-row.contract
+			.container
+				h3.section-title
+					| Contratar
+					span  Servicio
+				form(role="form" id="contract" class="contract-form")
+					.form-group.col-sm-12
+						label(for="name") Nombre:
+						input(type="text" class="form-control" onkeypress="return soloLetras(event)" id="name" name="name")
+					.form-group.col-sm-12
+						label(for="lastname") Apellido:
+						input(type="text" class="form-control" onkeypress="return soloLetras(event)" id="lastname" name="lastname")
+					.form-group.col-sm-6
+						label(for="phone") Teléfono:
+						input(type="text" class="form-control" onkeypress="return soloNumeros(event)" id="phone" name="phone")
+					.form-group.col-sm-6
+						label(for="dni") DNI:
+						input(type="text" class="form-control" onkeypress="return soloNumeros(event)" id="dni" name="dni")
+					.form-group.col-sm-12
+						label(for="mail") Correo:
+						input(type="text" class="form-control" id="mail" name="mail")
+					fieldset(class="col-sm-6" disabled)
+						.form-group
+							label(for="model") Modelo:
+							input(type="text" class="form-control" id="model" name="model" placeholder="modelo")
+					fieldset(class="col-sm-6" disabled)
+						.form-group
+							label(for="plan") Plan:
+							input(type="text" class="form-control" id="plan" name="plan" placeholder="plan")
+					.checkbox.col-sm-12
+						label
+							input(type="checkbox" checked)
+							| Estoy de acuerdo que Smartlover pueda hacer uso de mis datos.
+					button(type="submit" class="btn btn-red") Enviar
+				
+		footer.footer
+			include modules/footer
+		script(src="js/bundle.js")
+		script(src="js/vendor/bootstrap.js")
+		script(src="js/vendor/owl.carousel.min.js")

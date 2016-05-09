@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Smartlovers</title>
+    <link type="text/css" rel="stylesheet" href="css/vendor/owl.carousel.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header class="headerint">
+      <nav class="navbar navbar-black">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button><a href="index.html" class="navbar-brand"><img src="images/base/logo.png"></a>
+          </div>
+          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="bloglist.html"><i class="icon-blog"></i><span>Blog Smartlovers</span></a></li>
+              <li><a href="#"><i class="icon-sales"></i><span>Ultimas Ofertas</span></a></li>
+              <li><a href="catalog.html"><i class="icon-issu"></i><span>Catálogo de Productos</span></a></li>
+              <li><a href="#"><i class="icon-plan"></i><span>Planes Smart</span></a></li>
+            </ul>
+            <p class="navbar-text navbar-right hidden-sm">DISTRIBUIDOR OFICIAL DE<a href="http://www.claro.com.pe/" target="_blank"> <img src="images/base/logo-claro.png"></a></p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="section-row contract">
+      <div class="container">
+        <h3 class="section-title">Contratar<span> Servicio</span></h3>
+        <form role="form" id="contract" class="contract-form">
+          <div class="form-group col-sm-12">
+            <label for="name">Nombre:</label>
+            <input type="text" onkeypress="return soloLetras(event)" id="name" name="name" class="form-control">
+          </div>
+          <div class="form-group col-sm-12">
+            <label for="lastname">Apellido:</label>
+            <input type="text" onkeypress="return soloLetras(event)" id="lastname" name="lastname" class="form-control">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="phone">Teléfono:</label>
+            <input type="text" onkeypress="return soloNumeros(event)" id="phone" name="phone" class="form-control">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="dni">DNI:</label>
+            <input type="text" onkeypress="return soloNumeros(event)" id="dni" name="dni" class="form-control">
+          </div>
+          <div class="form-group col-sm-12">
+            <label for="mail">Correo:</label>
+            <input type="text" id="mail" name="mail" class="form-control">
+          </div>
+          <fieldset disabled class="col-sm-6">
+            <div class="form-group">
+              <label for="model">Modelo:</label>
+              <input type="text" id="model" name="model" placeholder="modelo" class="form-control">
+            </div>
+          </fieldset>
+          <fieldset disabled class="col-sm-6">
+            <div class="form-group">
+              <label for="plan">Plan:</label>
+              <input type="text" id="plan" name="plan" placeholder="plan" class="form-control">
+            </div>
+          </fieldset>
+          <div class="checkbox col-sm-12">
+            <label>
+              <input type="checkbox" checked>Estoy de acuerdo que Smartlover pueda hacer uso de mis datos.
+            </label>
+          </div>
+          <button type="submit" class="btn btn-red">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="footer-block block-left">
+              <ul class="footer-list">
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="footer-block block-center">
+              <h5>© 2015 smartlovers</h5>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="footer-block block-right">
+              <ul class="footer-list">
+                <li><a href="#">Compartir</a></li>
+                <li><a href="#">Siguenos</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bundle.js"></script>
+    <script src="js/vendor/bootstrap.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+  </body>
+</html>

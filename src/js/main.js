@@ -1,11 +1,43 @@
 window.jQuery = $ = require('jquery')
-
+require('jquery-validation')
 /**
  * Init Dependencies
  */
 var carousel = require('./vendor/module')
 var animate = require('./vendor/animate')
 
+$(function() {
+	/* Validate Product Form */
+	$('#contract').validate({
+		rules: {
+			name: {
+				required: true
+			},
+			lastname: {
+				required: true
+			},
+			mail: {
+				required: true
+			},
+			dni: {
+				required: true,
+				minlength: 8,
+				maxlength: 8
+			},
+			phone: {
+				required: true,
+				minlength: 9,
+				maxlength: 9
+			}
+		},
+		errorPlacement: function() {
+			return false
+		},
+		submitHandler: function(form) {
+			console.log('enviar')
+		}
+	})
+})
 $(window).on('load', function(){
 	carousel()
 	animate()
@@ -50,3 +82,6 @@ $(window).on('load resize', function(){
 
 	
 })
+
+global.soloLetras = require('./vendor/soloLetras');
+global.soloNumeros = require('./vendor/soloNumeros');

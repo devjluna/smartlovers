@@ -22,10 +22,10 @@ html(lang="es")
 						input(type="text" class="form-control" onkeypress="return soloLetras(event)" id="lastname" name="lastname")
 					.form-group.col-sm-6
 						label(for="phone") Teléfono:
-						input(type="text" class="form-control" onkeypress="return soloNumeros(event)" id="phone" name="phone")
+						input(type="text" class="form-control" onkeypress="return soloNumeros(event)" id="phone" name="phone" maxlength="9")
 					.form-group.col-sm-6
 						label(for="dni") DNI:
-						input(type="text" class="form-control" onkeypress="return soloNumeros(event)" id="dni" name="dni")
+						input(type="text" class="form-control" onkeypress="return soloNumeros(event)" id="dni" name="dni" maxlength="8")
 					.form-group.col-sm-12
 						label(for="mail") Correo:
 						input(type="text" class="form-control" id="mail" name="mail")

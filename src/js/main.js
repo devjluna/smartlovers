@@ -41,6 +41,29 @@ $(function() {
 $(window).on('load', function(){
 	carousel()
 	animate()
+
+	$('#btn-submit').click(function(){
+       $.ajax({
+        dataType:'json',
+        type:'post',
+        url: site+'contact/validate',
+        data:{
+          name : $('#name').val(),
+          lastname : $('#lastname').val(),
+          phone : $('#phone').val(),
+          dni : $('#dni').val(),
+          mail : $('#mail').val(),
+          model : $('#model').val(),
+          plan : $('#plan').val()
+        }
+       })
+       .success(function(data){
+
+       })
+       .fail(function(err){
+           console.log(err);
+       })
+   })
 })
 
 $(window).on('load resize', function(){

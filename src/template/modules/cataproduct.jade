@@ -1,4 +1,13 @@
 .container
+	form
+		.form-group
+			label(for="sel1") Selecionar equipo:
+			select(class="form-control" id="sel1")
+				option 1
+				option 2
+				option 3
+				option 4
+	.row
 	- for (var i = 1 ; i <= 12 ; i++)
 		section.catalog-block
 			article.catalog-article

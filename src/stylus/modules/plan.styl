@@ -1,0 +1,72 @@
+.plan
+	&-article
+		margin-top 30px
+	&-box
+		border 1px solid $gray_light
+	&-title
+		background-color black
+		padding 10px 0
+		position relative
+		h4
+			color white
+			margin 0
+			font-family Roboto
+			font-weight 400
+			font-size 1em
+			position relative
+			z-index 1
+		&:after
+			content ''
+			background-color black
+			width 20px
+			height 20px
+			top 25px
+			position absolute
+			transform translateX(-50%) rotate(45deg)
+	&-price
+		padding 20px
+		h3
+			margin 0
+			color $red
+			font-family Roboto
+			font-weight 700
+			font-size 2em
+		h6
+			margin 0
+			font-size 1.1em
+			margin-bottom 10px
+	&-details
+		text-align left
+	&-table
+		border-top 1px solid $gray_light
+	&-col
+		width 50%
+		display inline-block
+		margin-right -2px
+		border-left 1px solid $gray_light
+		padding 15px
+		vertical-align top
+		&:first-child
+			border-left 0
+	&-fil
+		display table-cell
+		vertical-align top
+		&:first-child
+			text-align center
+			span
+				display inline-block
+				color $red
+				font-size 2em
+		.fil-content
+			padding 0 0 0 15px
+		h4
+			margin 0
+			font-family RobotoC
+			font-size 1.2em
+		h6
+			margin 0
+			font-family RobotoC
+
+
+
+

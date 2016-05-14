@@ -12568,6 +12568,7 @@ require('jquery-validation')
  */
 var carousel = require('./vendor/module')
 var animate = require('./vendor/animate')
+var compare = require('./vendor/compare')
 
 $(function() {
 	/* Validate Product Form */
@@ -12600,6 +12601,9 @@ $(function() {
 			console.log('enviar')
 		}
 	})
+
+	$("input[name='compare[]']").on( "click", compare)
+
 })
 $(window).on('load', function(){
 	carousel()
@@ -12672,7 +12676,7 @@ $(window).on('load resize', function(){
 global.soloLetras = require('./vendor/soloLetras');
 global.soloNumeros = require('./vendor/soloNumeros');
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./vendor/animate":4,"./vendor/module":5,"./vendor/soloLetras":6,"./vendor/soloNumeros":7,"jquery":2,"jquery-validation":1}],4:[function(require,module,exports){
+},{"./vendor/animate":4,"./vendor/compare":5,"./vendor/module":6,"./vendor/soloLetras":7,"./vendor/soloNumeros":8,"jquery":2,"jquery-validation":1}],4:[function(require,module,exports){
 var animate = function() {
 	var wancho = $(window).width(),
 			walto = $(window).height()
@@ -12705,6 +12709,17 @@ var animate = function() {
 }
 module.exports = animate;
 },{}],5:[function(require,module,exports){
+var compare = function(){
+	var n = $("input[name='compare[]']:checked").length
+	
+	if(n == 2){
+		$('#myModal').modal('show')
+		$("input[name='compare[]']").attr('checked',false)
+	}
+};
+
+module.exports = compare;
+},{}],6:[function(require,module,exports){
 var carousel = function() {
 	var owl = $('#owl-team'),
 			owlP = $('#owl-promo')
@@ -12762,7 +12777,7 @@ var carousel = function() {
 }
 
 module.exports = carousel;
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 var soloLetras = function(e){
 	key = e.keyCode || e.which;
 	tecla = String.fromCharCode(key).toLowerCase();
@@ -12782,7 +12797,7 @@ var soloLetras = function(e){
 };
 
 module.exports = soloLetras;
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 var soloNumeros = function(e){
 	tecla = (document.all) ? e.keyCode : e.which;
 	if (tecla==8){

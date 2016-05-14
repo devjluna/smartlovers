@@ -1,19 +1,17 @@
 .container.catalog-filter
 	form(method="post" action="http://localhost:8888/dev/smartlovers/code/catalogo" class="catalog-form")
 		.form-group
-			label(for="sel1") Selecionar Marca:
 			select(id="sel1" class="form-control" name="brand")
-				option(value="seleccione") - Seleccione Marca -
-				option(selected="" value="1") Iphone
+				option(value="seleccione" selected="") Seleccione Marca
+				option(value="1") Iphone
 				option(value="2") Samsung
 		.form-group
-			label(for="sel2") Selecionar Típo Línea:
-				select(id="sel2" class="form-control" name="type")
-					option(selected="" value="seleccione") - Seleccione Típo de Línea -
-					option(value="portability") Portabilidad
-					option(value="renawa") Renovación
-					option(value="new_line") Línea Nueva
-		button(type="submit" name="btn_buscar") Buscar
+			select(id="sel2" class="form-control" name="type")
+				option(value="seleccione" selected="") Seleccione Típo de Línea
+				option(value="portability") Portabilidad
+				option(value="renawa") Renovación
+				option(value="new_line") Línea Nueva
+		button(type="submit" name="btn_buscar" class="btn btn-red") Filtrar
 .container
 	- for (var i = 1 ; i <= 12 ; i++)
 		section.catalog-block

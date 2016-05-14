@@ -5,6 +5,7 @@ require('jquery-validation')
  */
 var carousel = require('./vendor/module')
 var animate = require('./vendor/animate')
+var compare = require('./vendor/compare')
 
 $(function() {
 	/* Validate Product Form */
@@ -37,6 +38,9 @@ $(function() {
 			console.log('enviar')
 		}
 	})
+
+	$("input[name='compare[]']").on( "click", compare)
+
 })
 $(window).on('load', function(){
 	carousel()

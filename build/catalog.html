@@ -45,24 +45,21 @@
       <div class="container catalog-filter">
         <form method="post" action="http://localhost:8888/dev/smartlovers/code/catalogo" class="catalog-form">
           <div class="form-group">
-            <label for="sel1">Selecionar Marca:</label>
             <select id="sel1" name="brand" class="form-control">
-              <option value="seleccione">- Seleccione Marca -</option>
-              <option selected="" value="1">Iphone</option>
+              <option value="seleccione" selected="">Seleccione Marca</option>
+              <option value="1">Iphone</option>
               <option value="2">Samsung</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="sel2">Selecionar Típo Línea:
-              <select id="sel2" name="type" class="form-control">
-                <option selected="" value="seleccione">- Seleccione Típo de Línea -</option>
-                <option value="portability">Portabilidad</option>
-                <option value="renawa">Renovación</option>
-                <option value="new_line">Línea Nueva</option>
-              </select>
-            </label>
+            <select id="sel2" name="type" class="form-control">
+              <option value="seleccione" selected="">Seleccione Típo de Línea</option>
+              <option value="portability">Portabilidad</option>
+              <option value="renawa">Renovación</option>
+              <option value="new_line">Línea Nueva</option>
+            </select>
           </div>
-          <button type="submit" name="btn_buscar">Buscar</button>
+          <button type="submit" name="btn_buscar" class="btn btn-red">Filtrar</button>
         </form>
       </div>
       <div class="container">
@@ -371,6 +368,112 @@
         </div>
       </div>
     </footer>
+    <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span>x</span></button>
+            <div class="modal-col-5">
+              <div class="modal-figure">
+                <figure style="background-image: url(images/mobile/mobile_1.png)"></figure>
+              </div>
+              <div class="modal-title">
+                <h4>IPhone 6s</h4>
+                <h5>Apple</h5>
+              </div>
+              <div class="modal-feature">
+                <div class="features">
+                  <h4>4' <span>Pantalla</span></h4>
+                </div>
+                <div class="features">
+                  <h4>16MP <span>Cámara</span></h4>
+                </div>
+                <div class="features">
+                  <h4>8MP <span>Cámara Frontal</span></h4>
+                </div>
+                <div class="features">
+                  <h4>16GB <span>Memoria</span></h4>
+                </div>
+                <div class="features">
+                  <h4>iOS <span>Sistemas</span></h4>
+                </div>
+                <div class="features">
+                  <h4>16GB <span>Memoria</span></h4>
+                </div>
+                <div class="features-btn">
+                  <button type="submit" class="btn btn-red">Ver Detalle</button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-col-2">
+              <div class="modal-figure">
+                <div class="modal-bubble">
+                  <div class="modal-center">
+                    <div class="bubble">
+                      <h2>Comparar</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-ico">
+                <div class="modal-ico-f">
+                  <div class="icof">
+                    <h4><span class="icon-window"></span></h4>
+                  </div>
+                  <div class="icof">
+                    <h4><span class="icon-camera-on"></span></h4>
+                  </div>
+                  <div class="icof">
+                    <h4><span class="icon-camera-off"></span></h4>
+                  </div>
+                  <div class="icof">
+                    <h4><span class="icon-memory"></span></h4>
+                  </div>
+                  <div class="icof">
+                    <h4><span class="icon-hardware"></span></h4>
+                  </div>
+                  <div class="icof">
+                    <h4><span class="icon-system"></span></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-col-5">
+              <div class="modal-figure">
+                <figure style="background-image: url(images/mobile/mobile_2.png)"></figure>
+              </div>
+              <div class="modal-title">
+                <h4>IPhone 6s</h4>
+                <h5>Apple</h5>
+              </div>
+              <div class="modal-feature">
+                <div class="features">
+                  <h4>4' <span>Pantalla</span></h4>
+                </div>
+                <div class="features">
+                  <h4>16MP <span>Cámara</span></h4>
+                </div>
+                <div class="features">
+                  <h4>8MP <span>Cámara Frontal</span></h4>
+                </div>
+                <div class="features">
+                  <h4>16GB <span>Memoria</span></h4>
+                </div>
+                <div class="features">
+                  <h4>1.3GHZ <span>Procesador</span></h4>
+                </div>
+                <div class="features">
+                  <h4>iOS <span>Sistemas</span></h4>
+                </div>
+                <div class="features-btn">
+                  <button type="submit" class="btn btn-red">Ver Detalle</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/bundle.js"></script>
     <script src="js/vendor/bootstrap.js"></script>
     <script src="js/vendor/owl.carousel.min.js"></script>

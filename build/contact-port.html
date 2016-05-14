@@ -29,26 +29,26 @@
     <section class="section-row contract">
       <div class="container">
         <h3 class="section-title">Contratar<span> Servicio</span></h3>
-        <form role="form" id="contract" class="contract-form">
+        <form role="form" id="contract-port" class="contract-form">
           <div class="form-group col-sm-12">
             <label for="name">Nombre y appellido:</label>
             <input type="text" onkeypress="return soloLetras(event)" id="name" name="name" class="form-control">
-          </div>
-          <div class="form-group col-sm-6">
-            <label for="phone">Teléfono:</label>
-            <input type="text" onkeypress="return soloNumeros(event)" id="phone" name="phone" maxlength="9" class="form-control">
           </div>
           <div class="form-group col-sm-6">
             <label for="dni">DNI:</label>
             <input type="text" onkeypress="return soloNumeros(event)" id="dni" name="dni" maxlength="8" class="form-control">
           </div>
           <div class="form-group col-sm-6">
-            <label for="mail">Correo:</label>
-            <input type="text" id="mail" name="mail" class="form-control">
-          </div>
-          <div class="form-group col-sm-6">
             <label for="date">Fecha de nacimiento:</label>
             <input type="text" id="date" name="date" class="form-control">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="phoneport">Número a portar:</label>
+            <input type="text" onkeypress="return soloNumeros(event)" id="phoneport" name="phoneport" maxlength="9" class="form-control">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="operator">Operador actual:</label>
+            <input type="text" onkeypress="return soloLetras(event)" id="operator" name="operator" class="form-control">
           </div>
           <fieldset disabled class="col-sm-6">
             <div class="form-group">
@@ -62,6 +62,14 @@
               <input type="text" id="plan" name="plan" placeholder="plan" class="form-control">
             </div>
           </fieldset>
+          <div class="form-group col-sm-6">
+            <label for="preopos">¿Es pre o pos pago?</label>
+            <input type="text" id="preopos" name="preopos" class="form-control">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="phone">Número de contacto:</label>
+            <input type="text" onkeypress="return soloNumeros(event)" id="phone" name="phone" maxlength="9" class="form-control">
+          </div>
           <div class="checkbox col-sm-12">
             <label>
               <input type="checkbox" name="checkbox" checked>Estoy de acuerdo que Smartlover pueda hacer uso de mis datos.

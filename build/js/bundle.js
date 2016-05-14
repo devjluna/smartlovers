@@ -12577,10 +12577,10 @@ $(function() {
 			name: {
 				required: true
 			},
-			lastname: {
+			mail: {
 				required: true
 			},
-			mail: {
+			date: {
 				required: true
 			},
 			dni: {
@@ -12592,6 +12592,77 @@ $(function() {
 				required: true,
 				minlength: 9,
 				maxlength: 9
+			},
+			checkbox: {
+				required: true
+			}
+		},
+		errorPlacement: function() {
+			return false
+		},
+		submitHandler: function(form) {
+			console.log('enviar')
+		}
+	})
+
+	$('#contract-port').validate({
+		rules: {
+			name: {
+				required: true
+			},
+			dni: {
+				required: true,
+				minlength: 8,
+				maxlength: 8
+			},
+			date: {
+				required: true
+			},
+			phoneport:{
+				required: true,
+				minlength: 9,
+				maxlength: 9
+			},
+			operator:{
+				required: true
+			},
+			preopos: {
+				required: true
+			},
+			phone: {
+				required: true,
+				minlength: 9,
+				maxlength: 9
+			},
+			checkbox: {
+				required: true
+			}
+		},
+		errorPlacement: function() {
+			return false
+		},
+		submitHandler: function(form) {
+			console.log('enviar')
+		}
+	})
+
+	$('#contract-ren').validate({
+		rules: {
+			name: {
+				required: true
+			},
+			dni: {
+				required: true,
+				minlength: 8,
+				maxlength: 8
+			},
+			number:{
+				required: true,
+				minlength: 9,
+				maxlength: 9
+			},
+			checkbox: {
+				required: true
 			}
 		},
 		errorPlacement: function() {

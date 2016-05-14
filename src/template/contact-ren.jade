@@ -13,22 +13,16 @@ html(lang="es")
 				h3.section-title
 					| Contratar
 					span  Servicio
-				form(role="form" id="contract" class="contract-form")
+				form(role="form" id="contract-ren" class="contract-form")
 					.form-group.col-sm-12
 						label(for="name") Nombre y appellido:
 						input(type="text" class="form-control" onkeypress="return soloLetras(event)" id="name" name="name")
 					.form-group.col-sm-6
-						label(for="phone") Teléfono:
-						input(type="text" class="form-control" onkeypress="return soloNumeros(event)" id="phone" name="phone" maxlength="9")
-					.form-group.col-sm-6
 						label(for="dni") DNI:
 						input(type="text" class="form-control" onkeypress="return soloNumeros(event)" id="dni" name="dni" maxlength="8")
 					.form-group.col-sm-6
-						label(for="mail") Correo:
-						input(type="text" class="form-control" id="mail" name="mail")
-					.form-group.col-sm-6
-						label(for="date") Fecha de nacimiento:
-						input(type="text" class="form-control" id="date" name="date")
+						label(for="number") Número a renovar:
+						input(type="text" class="form-control" onkeypress="return soloNumeros(event)" id="number" name="number" maxlength="9")
 					fieldset(class="col-sm-6" disabled)
 						.form-group
 							label(for="model") Modelo:

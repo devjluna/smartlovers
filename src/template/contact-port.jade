@@ -13,22 +13,23 @@ html(lang="es")
 				h3.section-title
 					| Contratar
 					span  Servicio
-				form(role="form" id="contract" class="contract-form")
+				form(role="form" id="contract-port" class="contract-form")
 					.form-group.col-sm-12
 						label(for="name") Nombre y appellido:
 						input(type="text" class="form-control" onkeypress="return soloLetras(event)" id="name" name="name")
 					.form-group.col-sm-6
-						label(for="phone") Teléfono:
-						input(type="text" class="form-control" onkeypress="return soloNumeros(event)" id="phone" name="phone" maxlength="9")
-					.form-group.col-sm-6
 						label(for="dni") DNI:
 						input(type="text" class="form-control" onkeypress="return soloNumeros(event)" id="dni" name="dni" maxlength="8")
 					.form-group.col-sm-6
-						label(for="mail") Correo:
-						input(type="text" class="form-control" id="mail" name="mail")
-					.form-group.col-sm-6
 						label(for="date") Fecha de nacimiento:
 						input(type="text" class="form-control" id="date" name="date")
+					.form-group.col-sm-6
+						label(for="phoneport") Número a portar:
+						input(type="text" class="form-control" onkeypress="return soloNumeros(event)" id="phoneport" name="phoneport" maxlength="9")
+					.form-group.col-sm-6
+						label(for="operator") Operador actual:
+						input(type="text" class="form-control" onkeypress="return soloLetras(event)" id="operator" name="operator")
+
 					fieldset(class="col-sm-6" disabled)
 						.form-group
 							label(for="model") Modelo:
@@ -37,6 +38,12 @@ html(lang="es")
 						.form-group
 							label(for="plan") Plan:
 							input(type="text" class="form-control" id="plan" name="plan" placeholder="plan")
+					.form-group.col-sm-6
+						label(for="preopos") ¿Es pre o pos pago?
+						input(type="text" class="form-control" id="preopos" name="preopos")
+					.form-group.col-sm-6
+						label(for="phone") Número de contacto:
+						input(type="text" class="form-control" onkeypress="return soloNumeros(event)" id="phone" name="phone" maxlength="9")
 					.checkbox.col-sm-12
 						label
 							input(type="checkbox" name="checkbox" checked)

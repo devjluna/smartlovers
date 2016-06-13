@@ -19,7 +19,7 @@
               <li><a href="/bloglist.html"><span>Ultimas notícias</span></a></li>
               <li><a href="/analisis.html"><span>Analisís</span></a></li>
               <li><a href="/smartguide.html"><span>Smartguide</span></a></li>
-              <li><a href="/techshop.html"><span>Techshop</span></a></li>
+              <li><a href="/tedshop.html"><span>Tedshop</span></a></li>
               <li><a href="/prensa.html"><span>Prensa</span></a></li>
               <div class="navbar-btn">
                 <div class="navbar-a"><a href="#" class="btn btn-red">Servicio Técnico</a></div>
@@ -45,19 +45,48 @@
       </div>
     </section>
     <section class="catalog-product">
+      <div class="container catalog-filter">
+        <form method="post" action="http://localhost:8888/dev/smartlovers/code/catalogo" class="catalog-form">
+          <div class="form-group">
+            <select id="sel1" name="brand" class="form-control">
+              <option value="seleccione" selected="">Seleccione Marca</option>
+              <option value="1">Iphone</option>
+              <option value="2">Samsung</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select id="sel2" name="type" class="form-control">
+              <option value="seleccione" selected="">Seleccione Típo de Línea</option>
+              <option value="portability">Portabilidad</option>
+              <option value="renawa">Renovación</option>
+              <option value="new_line">Línea Nueva</option>
+            </select>
+          </div>
+          <button type="submit" name="btn_buscar" class="btn btn-red">Filtrar</button>
+        </form>
+      </div>
       <div class="container">
         <section class="catalog-block">
           <article class="catalog-article">
             <figure class="catalog-figure"><img src="images/mobile/mobile_1.png" class="img-responsive"></figure>
             <div class="catalog-title">
               <h4>IPhone 1S</h4>
+              <h6>Apple</h6>
             </div>
             <div class="catalog-details">
               <div class="block-two">
                 <h3>S/. 1200</h3>
+                <h6>Precio de equipo</h6>
+              </div>
+              <div class="block-two">
+                <h6>*En plan conexión 190 con acuerdo de 18 meses.</h6>
               </div>
             </div>
             <div class="square-btn"><a href="product.html">Ver Detalle</a></div>
+            <div class="catalog-compare">
+              <input type="checkbox" name="compare[]" id="compare1">
+              <label for="compare1">Comparar</label>
+            </div>
           </article>
         </section>
         <section class="catalog-block">
@@ -65,13 +94,22 @@
             <figure class="catalog-figure"><img src="images/mobile/mobile_2.png" class="img-responsive"></figure>
             <div class="catalog-title">
               <h4>IPhone 2S</h4>
+              <h6>Apple</h6>
             </div>
             <div class="catalog-details">
               <div class="block-two">
                 <h3>S/. 1200</h3>
+                <h6>Precio de equipo</h6>
+              </div>
+              <div class="block-two">
+                <h6>*En plan conexión 190 con acuerdo de 18 meses.</h6>
               </div>
             </div>
             <div class="square-btn"><a href="product.html">Ver Detalle</a></div>
+            <div class="catalog-compare">
+              <input type="checkbox" name="compare[]" id="compare2">
+              <label for="compare2">Comparar</label>
+            </div>
           </article>
         </section>
         <section class="catalog-block">
@@ -79,13 +117,22 @@
             <figure class="catalog-figure"><img src="images/mobile/mobile_3.png" class="img-responsive"></figure>
             <div class="catalog-title">
               <h4>IPhone 3S</h4>
+              <h6>Apple</h6>
             </div>
             <div class="catalog-details">
               <div class="block-two">
                 <h3>S/. 1200</h3>
+                <h6>Precio de equipo</h6>
+              </div>
+              <div class="block-two">
+                <h6>*En plan conexión 190 con acuerdo de 18 meses.</h6>
               </div>
             </div>
             <div class="square-btn"><a href="product.html">Ver Detalle</a></div>
+            <div class="catalog-compare">
+              <input type="checkbox" name="compare[]" id="compare3">
+              <label for="compare3">Comparar</label>
+            </div>
           </article>
         </section>
         <section class="catalog-block">
@@ -93,13 +140,22 @@
             <figure class="catalog-figure"><img src="images/mobile/mobile_4.png" class="img-responsive"></figure>
             <div class="catalog-title">
               <h4>IPhone 4S</h4>
+              <h6>Apple</h6>
             </div>
             <div class="catalog-details">
               <div class="block-two">
                 <h3>S/. 1200</h3>
+                <h6>Precio de equipo</h6>
+              </div>
+              <div class="block-two">
+                <h6>*En plan conexión 190 con acuerdo de 18 meses.</h6>
               </div>
             </div>
             <div class="square-btn"><a href="product.html">Ver Detalle</a></div>
+            <div class="catalog-compare">
+              <input type="checkbox" name="compare[]" id="compare4">
+              <label for="compare4">Comparar</label>
+            </div>
           </article>
         </section>
         <section class="catalog-block">
@@ -107,13 +163,22 @@
             <figure class="catalog-figure"><img src="images/mobile/mobile_5.png" class="img-responsive"></figure>
             <div class="catalog-title">
               <h4>IPhone 5S</h4>
+              <h6>Apple</h6>
             </div>
             <div class="catalog-details">
               <div class="block-two">
                 <h3>S/. 1200</h3>
+                <h6>Precio de equipo</h6>
+              </div>
+              <div class="block-two">
+                <h6>*En plan conexión 190 con acuerdo de 18 meses.</h6>
               </div>
             </div>
             <div class="square-btn"><a href="product.html">Ver Detalle</a></div>
+            <div class="catalog-compare">
+              <input type="checkbox" name="compare[]" id="compare5">
+              <label for="compare5">Comparar</label>
+            </div>
           </article>
         </section>
         <section class="catalog-block">
@@ -121,13 +186,22 @@
             <figure class="catalog-figure"><img src="images/mobile/mobile_6.png" class="img-responsive"></figure>
             <div class="catalog-title">
               <h4>IPhone 6S</h4>
+              <h6>Apple</h6>
             </div>
             <div class="catalog-details">
               <div class="block-two">
                 <h3>S/. 1200</h3>
+                <h6>Precio de equipo</h6>
+              </div>
+              <div class="block-two">
+                <h6>*En plan conexión 190 con acuerdo de 18 meses.</h6>
               </div>
             </div>
             <div class="square-btn"><a href="product.html">Ver Detalle</a></div>
+            <div class="catalog-compare">
+              <input type="checkbox" name="compare[]" id="compare6">
+              <label for="compare6">Comparar</label>
+            </div>
           </article>
         </section>
         <section class="catalog-block">
@@ -135,13 +209,22 @@
             <figure class="catalog-figure"><img src="images/mobile/mobile_7.png" class="img-responsive"></figure>
             <div class="catalog-title">
               <h4>IPhone 7S</h4>
+              <h6>Apple</h6>
             </div>
             <div class="catalog-details">
               <div class="block-two">
                 <h3>S/. 1200</h3>
+                <h6>Precio de equipo</h6>
+              </div>
+              <div class="block-two">
+                <h6>*En plan conexión 190 con acuerdo de 18 meses.</h6>
               </div>
             </div>
             <div class="square-btn"><a href="product.html">Ver Detalle</a></div>
+            <div class="catalog-compare">
+              <input type="checkbox" name="compare[]" id="compare7">
+              <label for="compare7">Comparar</label>
+            </div>
           </article>
         </section>
         <section class="catalog-block">
@@ -149,13 +232,22 @@
             <figure class="catalog-figure"><img src="images/mobile/mobile_8.png" class="img-responsive"></figure>
             <div class="catalog-title">
               <h4>IPhone 8S</h4>
+              <h6>Apple</h6>
             </div>
             <div class="catalog-details">
               <div class="block-two">
                 <h3>S/. 1200</h3>
+                <h6>Precio de equipo</h6>
+              </div>
+              <div class="block-two">
+                <h6>*En plan conexión 190 con acuerdo de 18 meses.</h6>
               </div>
             </div>
             <div class="square-btn"><a href="product.html">Ver Detalle</a></div>
+            <div class="catalog-compare">
+              <input type="checkbox" name="compare[]" id="compare8">
+              <label for="compare8">Comparar</label>
+            </div>
           </article>
         </section>
         <section class="catalog-block">
@@ -163,13 +255,22 @@
             <figure class="catalog-figure"><img src="images/mobile/mobile_9.png" class="img-responsive"></figure>
             <div class="catalog-title">
               <h4>IPhone 9S</h4>
+              <h6>Apple</h6>
             </div>
             <div class="catalog-details">
               <div class="block-two">
                 <h3>S/. 1200</h3>
+                <h6>Precio de equipo</h6>
+              </div>
+              <div class="block-two">
+                <h6>*En plan conexión 190 con acuerdo de 18 meses.</h6>
               </div>
             </div>
             <div class="square-btn"><a href="product.html">Ver Detalle</a></div>
+            <div class="catalog-compare">
+              <input type="checkbox" name="compare[]" id="compare9">
+              <label for="compare9">Comparar</label>
+            </div>
           </article>
         </section>
         <section class="catalog-block">
@@ -177,13 +278,22 @@
             <figure class="catalog-figure"><img src="images/mobile/mobile_10.png" class="img-responsive"></figure>
             <div class="catalog-title">
               <h4>IPhone 10S</h4>
+              <h6>Apple</h6>
             </div>
             <div class="catalog-details">
               <div class="block-two">
                 <h3>S/. 1200</h3>
+                <h6>Precio de equipo</h6>
+              </div>
+              <div class="block-two">
+                <h6>*En plan conexión 190 con acuerdo de 18 meses.</h6>
               </div>
             </div>
             <div class="square-btn"><a href="product.html">Ver Detalle</a></div>
+            <div class="catalog-compare">
+              <input type="checkbox" name="compare[]" id="compare10">
+              <label for="compare10">Comparar</label>
+            </div>
           </article>
         </section>
         <section class="catalog-block">
@@ -191,13 +301,22 @@
             <figure class="catalog-figure"><img src="images/mobile/mobile_11.png" class="img-responsive"></figure>
             <div class="catalog-title">
               <h4>IPhone 11S</h4>
+              <h6>Apple</h6>
             </div>
             <div class="catalog-details">
               <div class="block-two">
                 <h3>S/. 1200</h3>
+                <h6>Precio de equipo</h6>
+              </div>
+              <div class="block-two">
+                <h6>*En plan conexión 190 con acuerdo de 18 meses.</h6>
               </div>
             </div>
             <div class="square-btn"><a href="product.html">Ver Detalle</a></div>
+            <div class="catalog-compare">
+              <input type="checkbox" name="compare[]" id="compare11">
+              <label for="compare11">Comparar</label>
+            </div>
           </article>
         </section>
         <section class="catalog-block">
@@ -205,13 +324,22 @@
             <figure class="catalog-figure"><img src="images/mobile/mobile_12.png" class="img-responsive"></figure>
             <div class="catalog-title">
               <h4>IPhone 12S</h4>
+              <h6>Apple</h6>
             </div>
             <div class="catalog-details">
               <div class="block-two">
                 <h3>S/. 1200</h3>
+                <h6>Precio de equipo</h6>
+              </div>
+              <div class="block-two">
+                <h6>*En plan conexión 190 con acuerdo de 18 meses.</h6>
               </div>
             </div>
             <div class="square-btn"><a href="product.html">Ver Detalle</a></div>
+            <div class="catalog-compare">
+              <input type="checkbox" name="compare[]" id="compare12">
+              <label for="compare12">Comparar</label>
+            </div>
           </article>
         </section>
       </div>

@@ -29,7 +29,7 @@ body
 .square
 	&-btn
 		text-align center
-		margin 20px 0
+		margin-top 20px
 		a
 			background-color $red
 			color white
@@ -150,7 +150,63 @@ body
 		&-title
 			h2
 				font-size 1.3em
-
+/*.navbar-right
+	a
+		width 22px
+		margin-left 5px
+		img
+			width 100%
+			top 0
+			left 0
+			margin-left 0*/
+.navbar
+	&-nav
+		float right
+		position relative
+		> li
+			&:after
+				content ''
+				position absolute
+				border-left 1px solid rgba($white,.4)
+				left 0
+				top 10px
+				height 60%
+			&:first-child
+				&:after
+					content none
+	&-btn
+		height 50px
+		display table
+		margin 0
+	&-a
+		display table-cell
+		vertical-align middle
+		a
+			&.btn-red
+				padding 10px 15px
+				margin-left 10px
+				&:hover,
+				&:focus,
+				&:active
+					background-color $white
+					color $red
+	@media screen and (max-width 768px)
+		&-nav
+			float left
+			width 100%
+			margin 0
+			> li
+				&:after
+					content none
+		&-collapse
+			padding 0
+		&-btn
+			width 100%
+			text-align center
+		&-a
+			a
+				&.btn-red
+					margin-left 0
 
 
 

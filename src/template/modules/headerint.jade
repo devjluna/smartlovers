@@ -7,10 +7,21 @@ nav.navbar.navbar-black
 				- for (var i = 1 ; i <= 3 ; i++)
 					span.icon-bar
 			a(class="navbar-brand" href="index.html")
-				img(src="images/base/logo.png")
+				.navbar-img
+					img(src="images/base/logo.png")
 
 		//- Collect the nav links, forms, and other content for toggling
 		div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+			ul.redes
+				li
+					a(target="_blank" href='https://www.facebook.com/smartloverspe')
+						span.ico-f
+				li
+					a(target="_blank" href='https://twitter.com/smartloverspe')
+						span.ico-t
+				li
+					a(target="_blank" href='https://www.instagram.com/smartloverspe')
+						span.ico-i
 			ul.nav.navbar-nav
 				li
 					a(href="/bloglist.html")

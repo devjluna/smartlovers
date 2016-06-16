@@ -1,0 +1,9 @@
+.container
+	.row
+		- for (var i = 1 ; i <= 7 ; i++)
+			article.smartguide-article
+				.smartguide-title
+					h4 Preubas #{i}
+				.smartguide-title
+					div(class="embed-responsive embed-responsive-16by9")
+						iframe(class="embed-responsive-item" src="https://www.youtube.com/embed/Rzl81EMG-Rc")

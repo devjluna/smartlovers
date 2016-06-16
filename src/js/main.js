@@ -8,6 +8,33 @@ var animate = require('./vendor/animate')
 var compare = require('./vendor/compare')
 
 $(function() {
+	
+	$('iframe').css('width','100%')
+
+	$( window ).on('load resize', function() {
+		var w = $( window ).width();
+
+		if(w >= 1200){
+			$('iframe').css('width','100%')
+			$('iframe').css('height','450px')
+		}else if(w >= 992){
+			$('iframe').css('width','100%')
+			$('iframe').css('height','365px')
+		}else if(w >= 768){
+			$('iframe').css('width','100%')
+			$('iframe').css('height','380px')
+		}else if(w >= 590){
+			$('iframe').css('width','100%')
+			$('iframe').css('height','350px')
+		}else if(w >= 325){
+			$('iframe').css('width','100%')
+			$('iframe').css('height','280px')
+		}else{
+			$('iframe').css('width','100%')
+			$('iframe').css('height','130px')
+		}
+	});
+
 	/* Validate Product Form */
 	$('#contract').validate({
 		rules: {
@@ -42,9 +69,12 @@ $(function() {
 		}
 	})
 
-	$('#contract-port').validate({
+	$('#frm_service').validate({
 		rules: {
 			name: {
+				required: true
+			},
+			lastname: {
 				required: true
 			},
 			dni: {
@@ -52,18 +82,7 @@ $(function() {
 				minlength: 8,
 				maxlength: 8
 			},
-			date: {
-				required: true
-			},
-			phoneport:{
-				required: true,
-				minlength: 9,
-				maxlength: 9
-			},
-			operator:{
-				required: true
-			},
-			preopos: {
+			repair: {
 				required: true
 			},
 			phone: {
@@ -71,7 +90,7 @@ $(function() {
 				minlength: 9,
 				maxlength: 9
 			},
-			checkbox: {
+			question: {
 				required: true
 			}
 		},
@@ -113,7 +132,8 @@ $(function() {
 	$("input[name='compare[]']").on( "click", compare)
 
 })
-$(window).on('load', function(){
+
+$(window).on('load', function(){	
 	carousel()
 	animate()
 

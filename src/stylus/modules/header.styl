@@ -127,7 +127,7 @@
 				font-size 1.3em
 .navbar
 	&-black
-		background-color black
+		background-color $white
 		border-radius 0
 		border 0
 		border-bottom 5px solid $red
@@ -135,19 +135,23 @@
 		.navbar
 			&-brand
 				padding 0 15px
+				display table
+			&-img
+				display table-cell
+				vertical-align middle
 				img
-					max-width 45px
+					max-width 210px
 					margin 3.3px auto
 			&-toggle
-				border-color $white
+				border-color $red
 				.icon-bar
-					background-color $white
+					background-color $red
 			&-nav
 				li
 					a
 						padding 15px 10px
 						span
-							color $white
+							color $gray_dark
 						i
 							color $white
 							margin-right 5px
@@ -159,6 +163,8 @@
 						&:active
 							transition all .3s
 							background-color $red
+							span
+								color $white
 	&-text
 		color $white
 		font-family RobotoC
@@ -171,5 +177,11 @@
 				top 0
 				left 0
 				margin-left 0
+	@media screen and (max-width 992px)
+		&-black
+			.navbar
+				&-img
+					img
+						max-width 134px
 		
 

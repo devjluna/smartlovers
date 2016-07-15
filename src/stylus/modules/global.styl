@@ -25,7 +25,15 @@ body
 			color white
 			transition all .3s
 			&:hover
-				background-color black			
+				background-color black
+		&-facebook
+			background-color $facebook
+			color white
+			transition all .3s
+			&:hover
+				background-color black
+			span
+				color $white
 .square
 	&-btn
 		text-align center
@@ -259,3 +267,7 @@ body
 		float none
 		margin 0 auto
 		display table
+		
+@media screen and (min-width 1200px)
+	.container
+		width 1040px

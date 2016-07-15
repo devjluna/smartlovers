@@ -16,10 +16,10 @@ $(function() {
 
 		if(w >= 1200){
 			$('iframe').css('width','100%')
-			$('iframe').css('height','450px')
+			$('iframe').css('height','349px')
 		}else if(w >= 992){
 			$('iframe').css('width','100%')
-			$('iframe').css('height','365px')
+			$('iframe').css('height','323px')
 		}else if(w >= 768){
 			$('iframe').css('width','100%')
 			$('iframe').css('height','380px')
